@@ -1,0 +1,27 @@
+{
+  "name": "TollSentryLogin",
+  "short_name":"TollSentryLogin",
+  "description": "AutoLoginSentry",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs", "https://billy-sentry.skbkontur.ru/"
+  ],
+  "browser_action": {
+      "default_title": "AutoLoginSentry",
+      "default_icon": "icons/chrome.png",
+      "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "/icons/icon48.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["file:///*"],
+    "js":      ["jquery.js"]
+  }],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

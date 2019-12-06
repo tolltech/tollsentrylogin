@@ -1,0 +1,1 @@
+$('.btn-login-openid').click();
