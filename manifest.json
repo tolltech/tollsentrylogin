@@ -2,7 +2,7 @@
   "name": "TollSentryLogin",
   "short_name":"TollSentryLogin",
   "description": "AutoLoginSentry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": [
     "tabs", "https://billy-sentry.skbkontur.ru/"
   ],
