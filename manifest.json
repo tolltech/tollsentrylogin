@@ -4,7 +4,11 @@
   "description": "Автоматический клик на кнопку Login на сайте sentry, jhub.skbkontur",
   "version": "1.0.6",
   "permissions": [
-    "tabs", "https://billy-sentry.skbkontur.ru/", "https://billy-sentry.testkontur.ru/", "https://jhub.skbkontur.ru/"
+    "tabs",
+    "https://billy-sentry.skbkontur.ru/", 
+    "https://billy-sentry.testkontur.ru/", 
+    "https://jhub.skbkontur.ru/", 
+    "https://sentry.skbkontur.ru/"
   ],
   "browser_action": {
       "default_title": "AutoLoginSentry",

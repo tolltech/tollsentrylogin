@@ -22,6 +22,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 chrome.tabs.query({ url: [
     "*://billy-sentry.skbkontur.ru/auth/login/sentry/*",
      "*://billy-sentry.testkontur.ru/auth/login/sentry/*",
+     "*://sentry.skbkontur.ru/auth/login/sentry/*",
      "*://jhub.skbkontur.ru/hub/auth/login*"
     ] }, function (tabs) {
     for (var i = 0; i < tabs.length; i++) {
