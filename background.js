@@ -9,8 +9,8 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     if (!tab 
         || 
         (
-            tab.url.indexOf('sentry.skbkontur.ru/auth/login/sentry') == -1
-            && tab.url.indexOf('sentry.testkontur.ru/auth/login/sentry') == -1
+            tab.url.indexOf('sentry.skbkontur.ru/auth/login') == -1
+            && tab.url.indexOf('sentry.testkontur.ru/auth/login') == -1
             && tab.url.indexOf('jhub.skbkontur.ru/hub/auth/login') == -1
         )) {
         return;
@@ -20,9 +20,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 });
 
 chrome.tabs.query({ url: [
-    "*://billy-sentry.skbkontur.ru/auth/login/sentry/*",
-     "*://billy-sentry.testkontur.ru/auth/login/sentry/*",
-     "*://sentry.skbkontur.ru/auth/login/sentry/*",
+    "*://billy-sentry.skbkontur.ru/auth/login/*",
+     "*://billy-sentry.testkontur.ru/auth/login/*",
+     "*://sentry.skbkontur.ru/auth/login/*",
      "*://jhub.skbkontur.ru/hub/auth/login*"
     ] }, function (tabs) {
     for (var i = 0; i < tabs.length; i++) {
