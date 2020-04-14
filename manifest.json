@@ -2,7 +2,7 @@
   "name": "TollSentryLogin",
   "short_name":"TollSentryLogin",
   "description": "Автоматический клик на кнопку Login на сайте sentry, jhub.skbkontur",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "permissions": [
     "tabs",
     "https://billy-sentry.skbkontur.ru/", 
@@ -12,11 +12,11 @@
   ],
   "browser_action": {
       "default_title": "AutoLoginSentry",
-      "default_icon": "icons/chrome.png",
+      "default_icon": "chrome.png",
       "default_popup": "popup.html"
   },
   "icons": {
-    "48": "/icons/icon48.png"
+    "48": "icon48_2.png"
   },
   "background": {
     "persistent": false,
